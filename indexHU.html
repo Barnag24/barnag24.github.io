@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<title>Undercover: The Game</title>
+<style type = "text/css">
+@font-face
+{
+font-family:elite;
+src: url("SpecialElite.ttf")
+}
+body {
+font-family:elite;
+background-color:black;
+margin:auto;
+overflow-x:hidden;
+}
+#mainbody {
+background-image: url("bg.jpg");
+background-repeat:no-repeat;
+background-position: center top;
+background-attachment:fixed;
+background-size:100vw auto;
+width:100vw;
+min-height:100vh;
+background-color:black;
+}
+th {
+height:100px;
+width:100px;
+padding:10px;
+background:rgba(173, 173, 173, 0.74);
+color:black;
+border:5px solid black;
+box-shadow:5px 5px 2px 2px rgba(0,0,0,0.5);
+transition:background 1s;
+transition:color 1s;
+}
+th:hover {
+background:rgba(0,0,0,1.0);
+color:white;
+cursor:pointer;
+}
+#logo:hover {
+cursor:pointer;
+}
+#footer {
+color:white;
+background-color:rgba(0,0,0,0.5);
+text-align:center;
+padding:20px;
+position:static;
+text-shadow:3px 3px 2px rgba(0,0,0,0.8);
+}
+#content1 {
+width:560px;
+margin:auto;
+}
+#content2 {
+font-size:50px; color:white; font-weight:bold; background-color:rgba(0,0,0,0.5); padding:5px; text-align:center; text-shadow:3px 3px 2px rgba(0,0,0,0.8); margin-bottom:10px;
+}
+#content3 {
+color:white;
+background:rgba(0,0,0,0.5);
+width:95vw;
+margin:auto;
+margin-bottom:10px;
+padding:10px;
+}
+.sidePic {
+width:500px;
+height:auto;
+display:none;
+}
+a:visited {
+color:blue;
+}
+</style>
+</head>
+<body>
+<div id = "mainbody">
+<div id = "background-illustration" style = "position:absolute;">
+<img src = "Agent1.png" class = "sidePic" id = "agentBg" style = "transform:rotate(45deg); position:absolute; top:300px; left:-1000px;"/>
+<img src = "Guard1.png" class = "sidePic" id = "guardBg" style = "transform:rotate(-45deg); position:absolute; top:300px; right:-2300px;"/>
+</div>
+<div id = "page-container" style = "position:relative;">
+<div style = "float:right; position:relative; right:20px; top:20px; padding:10px; background-color:rgba(0,0,0,0.5); color:white; border-radius:10px; box-shadow:2px 2px 2px rgba(0,0,0,0.5);"><a href = "index.html">EN</a> | HU</div>
+<img id = "logo" src = "Logo.png" style = "display:block; margin-left:auto; margin-right:auto;"/>
+<table align = "center" style = "padding-bottom:40px;">
+<tr>
+<th id = "nav1" style = "border-radius:50% 0% 0% 50%;">Nézd meg trailert!</th>
+<th id = "nav2">Töltsd le a demót!</th>
+<th id = "nav3" style = "border-radius:0% 50% 50% 0%;">Rólunk</th>
+</tr>
+</table>
+<section id = "content1"><iframe width="560" height="315" src="https://www.youtube.com/embed/ncX4sMy9TKo" frameborder="0" allowfullscreen></iframe></section>
+<section id = "content2"><p>Jó szórakozást!</p></section>
+<section id = "content3"><img src = "Me.png" style = "position:relative; float:right; height:500px; width:auto;"/><h1>Bemutatkozás</h1><p>Kocsis Barnabás vagyok, az Undercover című videojáték projektvezetője, fejlesztője, de legfőképpen programozója. Az ELTE Radnóti Miklós Gyakorló Gimnáziumába járok. Szabadidőmben programozni tanulok, mert megláttam benne a teremtés örömét. Valószínűleg később ezen a pályán szeretnék elhelyezkedni.</p>
+<p>A programozás már a kezdetektől fogva ott van az életemben, hiszen édesapám is ezt a munkát végzi születésemtől fogva. Gyakran vitt be engem kisebb koromban egész napokra a munkahelyére, amit egy nyugodt, színes, barátságos helyként ismertem meg, ahol ráadásul mindig van forrócsoki. Sokat kérdezősködtem a munkájukkal kapcsolatban, szinte én is csinálni akartam velük. Hamarosan megismerkedtem a számítógépes játékokkal, amiket édesapám is szívesen játszott, közös téma lett belőlük. Az iskolában megismerkedtem a Comenius Logoval, és körvonalazódott bennem a nagy összefüggés. Apával együtt folytattuk ennek a nagyszerű programnak a megismerését, viszont a Radnótiba átiratkozás miatt sok dolog háttérbe szorult, köztük ez is.</p>
+<p>2015-ben hírt kaptam egy programozás szakkörről az iskolában, és rögtön eszembe jutott, hogy hiszen engem ez érdekel. Elmentünk tehát néhány osztálytársammal megnézni. Az oktatók mind egyetemisták voltak, nem hivatásos tanárok, tehát nem tudták úgy átadni a tudásukat, ahogy azt ők és mi is szerettük volna, így sokan „elhullottak” a csoportból. Én viszont kitartottam, otthon órákat böngésztem az oktatóról másolt kódot, hogy én is tudjak ilyet írni!</p>
+<p>Az első szakkör a C# nyelvre tanított meg (később volt Java is), a Visual Studio használatával. Az egyik első feladat egy labirintus készítése volt a konzolon, karakterek segítségével. Ebbe raktunk egy mozgatható karaktert is, és ezzel játszadoztunk sokáig. Én pedig az otthoni „szeánszaim” alkalmával egyre tovább fejlesztettem a programot, például a véletlenszerűen mozgó „őrökkel”, amik a konzol természetéből adódóan csak akkor tudtak megmozdulni, amikor a játékos lépett…</p>
+<p>A következő oktatóval értük el a következő mérföldkövet: a grafikus ablakban való megjelenítést. Ő ajánlotta nekem, hogy az újonnan tanult osztályokat és az ablakot is használhatnám a játékban. Meg is lett: a háttérben a konzolos alapötlet futott, csak szép ruhába öltöztettem a rajzoló segítségével.</p>
+<p>Nyár elején már annyira benne voltam a dologban, hogy úgy gondoltam, egy fejlettebb, IGAZI játékot is meg tudnék csinálni! Ehhez egy kicsit össze kellett szednem magamat: Nulláról kezdtem. Egy igazi küzdelem volt felépíteni egy egyszerűnek gondolt játék logikáját, belső felépítését. Főként internetes fórumokra, és a jól bevált próba-szerencse módszerre támaszkodtam. Minden lehetetlennek tűnt elsőre, de most már látszik: elkészültek, működnek! Tanulság: Nem szabad feladni, egyszer minden sikerül!</p>
+<p>Az egyik barátomat kértem meg, hogy segítsen a nem programozós részekben, és így ketten készítjük a mai napig az Undercovert. Be kell vallanom, hogy ketten kicsit kevesen vagyunk, de eddig még a lelkesedésem teljesen felülkerekedett az akadályokon, amelyek egy játék leprogramozása során felmerülhetnek. Vagy maradt a struccpolitika... Egy történettel rendelkező játék sok erőforrást igényel, ennek ellenére sikerült teljes, angol nyelvű szinkront biztosítanunk a küldetésekhez. És már a történet fele készen is van!</p>
+<p>Tanulóként és játékosként a legevidensebb dolog volt egy játékkal kezdeni, Myst rajongóként pedig egy világot teremteni, amit fel lehet fedezni, amivel interakcióba lehet lépni, egy saját kalandjátékot építeni.</p>
+</section>
+<section id = "footer">©<b>2017 Az Undercover Fejlesztői Csapat - Minden jog fenntartva.</b></section>
+</div>
+</div>
+<script type="text/javascript" src = "Scripts.js"></script>
+</body>
+</html>
