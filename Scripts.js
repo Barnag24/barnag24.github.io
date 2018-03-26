@@ -56,14 +56,14 @@ $("#nav1").click(function() {
 });
 $("#nav2").click(function() {
 	showContent(2);
-var win = window.open('https://drive.google.com/file/d/1DPRPBx0MxTiZwrUVEvXzGrYk3t_rGoUq/view?usp=sharing', '_blank');
-if (win) {
+//var win = window.open('', '_blank');
+//if (win) {
     //Browser has allowed it to be opened
-    win.focus();
-} else {
+    //win.focus();
+//} else {
     //Browser has blocked it
-    alert('Please allow popups for this website!');
-}
+    //alert('Please allow popups for this website!');
+//}
 });
 $("#nav3").click(function() {
 	showContent(3);
