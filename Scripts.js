@@ -1,13 +1,3 @@
-var logoOriginalSize = [$("#logo").css("width"), $("#logo").css("height")];
-$("#logo").on("mouseenter", function () {
-	    var heightchange = (1 + 40 / $("#logo").width()) * $("#logo").height();
-	    var bottomchange = (heightchange - $("#logo").height()) / 2;
-	    $("#logo").animate({width:'+=40px', height:heightchange + 'px', bottom:bottomchange + 'px', right:'20px'}, 100);	
-});
-$("#logo").on("mouseleave", function () {
-	    $("#logo").animate({width:logoOriginalSize[0], height:logoOriginalSize[1], bottom:'0px', right:'0px'}, 100);
-});
-
 var bgIllustration = 0;
 
 function showBgIllustration()
@@ -25,9 +15,11 @@ var contentNo = 0;
 
 function hideAllContent(_animTime)
 {
+	
 $("#content1").hide(_animTime);
 $("#content2").hide(_animTime);
 $("#content3").hide(_animTime);
+
 if (bgIllustration != 0)
 {
 	bgIllustration = 0;
@@ -37,6 +29,7 @@ if (bgIllustration != 0)
 	});
 	
 }
+
 }
 hideAllContent(0);
 function showContent(_number)

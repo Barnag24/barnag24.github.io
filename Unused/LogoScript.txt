@@ -1,0 +1,9 @@
+var logoOriginalSize = [$("#logo").css("width"), $("#logo").css("height")];
+$("#logo").on("mouseenter", function () {
+	    var heightchange = (1 + 40 / $("#logo").width()) * $("#logo").height();
+	    var bottomchange = (heightchange - $("#logo").height()) / 2;
+	    $("#logo").animate({width:'+=40px', height:heightchange + 'px', bottom:bottomchange + 'px', right:'20px'}, 100);	
+});
+$("#logo").on("mouseleave", function () {
+	    $("#logo").animate({width:logoOriginalSize[0], height:logoOriginalSize[1], bottom:'0px', right:'0px'}, 100);
+});
